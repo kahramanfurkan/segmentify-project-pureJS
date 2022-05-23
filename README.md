@@ -10,3 +10,5 @@
 
 #### Kullanılan veri : [product-list.json](https://api.npoint.io/ceec662bde0d9ba4f7cc)
 
+#### React Version => [GitHub](https://github.com/kahramanfurkan/segmentify-project-react)
+
