@@ -22,7 +22,7 @@ body {
     min-height: 550px;
 }
 
-.container h2 {
+.container h3 {
     font-weight: 500;
     color: #333333;
     margin-left: 2%;
@@ -219,6 +219,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+    .container h3 {
+        font-size: 16px;
+    }
+
     .second-row {
         flex-direction: column;
         padding: 0 5px;

@@ -25,7 +25,6 @@ const arrangeCategoryTitlesAndInitialData = (categoryData) => {
         menu.append(navMaker(category, i));
     })
 
-    selectedCategory = { categoryIndex: 0, categoryName: 'Size Özel' };
     setCategory(0, 'Size Özel');
 };
 
@@ -50,9 +49,13 @@ const fetchSelectedCategory = () => {
 const setCategory = (categoryIndex, categoryName) => {
     let swiper = document.querySelector('.swiper-wrapper');
     let loader = document.querySelector('.loader-container');
+    let mainTitle = document.querySelector('#mainTitle');
+
     swiper.innerHTML = '';
     loader.style.display = "flex";
     selectedCategory = { categoryIndex: categoryIndex, categoryName: categoryName };
+    mainTitle.innerHTML = selectedCategory.categoryName;
+    
     fetchSelectedCategory();
     const navItems = document.querySelectorAll('.nav-item');
     for (let i = 0; i < navItems.length; i++) {
