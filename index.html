@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segmentify Project pureJS</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./loader.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div>
+            <h2>Sizin için Seçtiklerimiz</h2>
+            <div class="second-row">
+                <div class="menu"></div>
+                <div class="cards-area">
+                    <div class="loader-container" style="display:none;">
+                        <div class="lds-dual-ring"></div>
+                    </div>
+
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="signature">
+            <img src='/favicon.png' width="25" />
+            Segmentify işe alım projesi - <a href="https://www.linkedin.com/in/furkan-kahraman-377889208/"
+                target="_blank">Furkan Kahraman</a>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="./scripts.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            watchSlidesProgress: true,
+            slidesPerView: 2,
+            spaceBetween: 90,
+            breakpoints: {
+                768: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                }
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>
